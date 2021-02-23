@@ -1,6 +1,6 @@
-package com.anushka.tmdbclient.data.domain.usecase
+package com.anushka.tmdbclient.domain.usecase
 
-import com.anushka.tmdbclient.data.domain.repository.MovieRepository
+import com.anushka.tmdbclient.domain.repository.MovieRepository
 import com.anushka.tmdbclient.data.model.movie.Movie
 
 class GetMoviesUseCase (private val movieRepository: MovieRepository){

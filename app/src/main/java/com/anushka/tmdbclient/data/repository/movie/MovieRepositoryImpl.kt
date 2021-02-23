@@ -1,7 +1,7 @@
 package com.anushka.tmdbclient.data.repository.movie
 
 import android.util.Log
-import com.anushka.tmdbclient.data.domain.repository.MovieRepository
+import com.anushka.tmdbclient.domain.repository.MovieRepository
 import com.anushka.tmdbclient.data.model.movie.Movie
 import com.anushka.tmdbclient.data.repository.movie.datasource.MovieCacheDataSource
 import com.anushka.tmdbclient.data.repository.movie.datasource.MovieLocalDataSource

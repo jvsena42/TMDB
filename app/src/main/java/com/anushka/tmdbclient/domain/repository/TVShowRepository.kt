@@ -1,4 +1,4 @@
-package com.anushka.tmdbclient.data.domain.repository
+package com.anushka.tmdbclient.domain.repository
 
 import com.anushka.tmdbclient.data.model.tvshow.TvShow
 

@@ -1,7 +1,7 @@
 package com.anushka.tmdbclient.data.repository.artist
 
 import android.util.Log
-import com.anushka.tmdbclient.data.domain.repository.ArtistRepository
+import com.anushka.tmdbclient.domain.repository.ArtistRepository
 import com.anushka.tmdbclient.data.model.artist.Artist
 import com.anushka.tmdbclient.data.repository.artist.datasource.ArtistCacheDataSource
 import com.anushka.tmdbclient.data.repository.artist.datasource.ArtistLocalDataSource
