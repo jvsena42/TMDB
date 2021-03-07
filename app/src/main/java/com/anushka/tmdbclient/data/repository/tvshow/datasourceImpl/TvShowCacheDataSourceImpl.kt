@@ -1,12 +1,10 @@
 package com.anushka.tmdbclient.data.repository.tvshow.datasourceImpl
 
-import com.anushka.tmdbclient.data.model.movie.Movie
 import com.anushka.tmdbclient.data.model.tvshow.TvShow
-import com.anushka.tmdbclient.data.repository.movie.datasource.MovieCacheDataSource
-import com.anushka.tmdbclient.data.repository.tvshow.datasource.TVShowCacheDataSource
+import com.anushka.tmdbclient.data.repository.tvshow.datasource.TvShowCacheDataSource
 import java.util.ArrayList
 
-class TvShowCacheDataSourceImpl: TVShowCacheDataSource {
+class TvShowCacheDataSourceImpl: TvShowCacheDataSource {
     private var tvShowList = ArrayList<TvShow>()
 
     override suspend fun getShowsFromCache(): List<TvShow> {

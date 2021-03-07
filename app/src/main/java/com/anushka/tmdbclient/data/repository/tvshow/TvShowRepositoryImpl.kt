@@ -1,23 +1,18 @@
 package com.anushka.tmdbclient.data.repository.tvshow
 
 import android.util.Log
-import com.anushka.tmdbclient.domain.repository.MovieRepository
-import com.anushka.tmdbclient.domain.repository.TVShowRepository
-import com.anushka.tmdbclient.data.model.movie.Movie
+import com.anushka.tmdbclient.domain.repository.TvShowRepository
 import com.anushka.tmdbclient.data.model.tvshow.TvShow
-import com.anushka.tmdbclient.data.repository.movie.datasource.MovieCacheDataSource
-import com.anushka.tmdbclient.data.repository.movie.datasource.MovieLocalDataSource
-import com.anushka.tmdbclient.data.repository.movie.datasource.MovieRemoteDataSource
-import com.anushka.tmdbclient.data.repository.tvshow.datasource.TVShowCacheDataSource
+import com.anushka.tmdbclient.data.repository.tvshow.datasource.TvShowCacheDataSource
 import com.anushka.tmdbclient.data.repository.tvshow.datasource.TvShowLocalDataSource
 import com.anushka.tmdbclient.data.repository.tvshow.datasource.TvShowRemoteDataSource
 import java.lang.Exception
 
-class tvShowRepositoryImpl(
+class TvShowRepositoryImpl(
     private val tvShowRemoteDataSource: TvShowRemoteDataSource,
     private val tvShowLocalDataSource: TvShowLocalDataSource,
-    private val tvShowCacheDataSource: TVShowCacheDataSource
-): TVShowRepository {
+    private val tvShowCacheDataSource: TvShowCacheDataSource
+): TvShowRepository {
     override suspend fun getTVShows(): List<TvShow>? {
         //Cache -> Banco local - API
         return getShowsFromCache()

@@ -1,8 +1,8 @@
 package com.anushka.tmdbclient.domain.usecase
 
-import com.anushka.tmdbclient.domain.repository.TVShowRepository
+import com.anushka.tmdbclient.domain.repository.TvShowRepository
 import com.anushka.tmdbclient.data.model.tvshow.TvShow
 
-class UpdateTVShows(private val tvShowRepository: TVShowRepository) {
+class UpdateTvShowsUseCase(private val tvShowRepository: TvShowRepository) {
     suspend fun execute():List<TvShow>? = tvShowRepository.updateTVShows()
 }
